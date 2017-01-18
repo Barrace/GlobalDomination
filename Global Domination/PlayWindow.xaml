@@ -1,0 +1,18 @@
+﻿<Window x:Class="Global_Domination.PlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Global_Domination"
+        mc:Ignorable="d"
+        Title="PlayWindow" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="playLocalButton" Content="Pass + Play" HorizontalAlignment="Left" Margin="94,107,0,0" VerticalAlignment="Top" Width="94" Click="button_Click"/>
+        <Button x:Name="playOnlineButton" Content="Play Online" HorizontalAlignment="Left" Margin="94,178,0,0" VerticalAlignment="Top" Width="94"/>
+        <Button x:Name="playWithFriend" Content="Play With Friend" HorizontalAlignment="Left" Margin="94,143,0,0" VerticalAlignment="Top" Width="94"/>
+        <Button x:Name="resumeButton" Content="Resume" HorizontalAlignment="Left" Margin="94,44,0,0" VerticalAlignment="Top" Width="94" Click="resumeButton_Click"/>
+        <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock x:Name="emailBlock" HorizontalAlignment="Left" Margin="66,10,0,0" TextWrapping="Wrap" TextAlignment="Right" Text = "email should be here"  VerticalAlignment="Top" Height="16" Width="216"/>
+
+    </Grid>
+</Window>

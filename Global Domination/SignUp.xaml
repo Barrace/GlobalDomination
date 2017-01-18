@@ -1,0 +1,23 @@
+﻿<Window x:Class="Global_Domination.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Global_Domination"
+        mc:Ignorable="d"
+        Title="SignUp" Height="300" Width="300">
+    <Grid>
+        <TextBox x:Name="emailTextbox" HorizontalAlignment="Left" Height="23" Margin="74,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="183" TextChanged="emailTextBox_TextChanged"/>
+        <TextBox x:Name="emailConfirmTextbox" HorizontalAlignment="Left" Height="23" Margin="74,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="183" TextChanged="emailConfirmTextbox_TextChanged"/>
+        <TextBlock x:Name="errorBlock" HorizontalAlignment="Left" Margin="58,21,0,0" TextWrapping="Wrap" Text="Welcome!" VerticalAlignment="Top" Height="53" Width="183"/>
+        <Button x:Name="signUpButton" Content="Sign Up" HorizontalAlignment="Left" Margin="58,232,0,0" VerticalAlignment="Top" Width="75" Click="signUpButton_Click"/>
+        <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="166,232,0,0" VerticalAlignment="Top" Width="75" Click="cancelButton_Click"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="74,166,0,0" VerticalAlignment="Top" Width="183"  PasswordChanged="passwordBox_PasswordChanged" />
+        <PasswordBox x:Name="passwordConfirmBox" HorizontalAlignment="Left" Margin="74,189,0,0" VerticalAlignment="Top" Width="183" PasswordChanged="passwordConfirmBox_PasswordChanged"/>
+        <Label x:Name="passwordLabel" Content="Password" HorizontalAlignment="Left" Margin="2,166,0,0" VerticalAlignment="Top" Width="61" Height="28"/>
+        <Label x:Name="confirmPasswordLabel" Content="Confirm" HorizontalAlignment="Left" Margin="11,189,0,0" VerticalAlignment="Top" Width="58" Height="24"/>
+        <Label x:Name="emailLabel" Content="Email" HorizontalAlignment="Left" Margin="19,88,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label x:Name="ConfirmEmailLabel_Copy" Content="Confirm" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Width="58"/>
+
+    </Grid>
+</Window>

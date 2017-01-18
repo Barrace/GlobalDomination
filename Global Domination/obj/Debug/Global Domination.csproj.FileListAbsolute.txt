@@ -1,0 +1,33 @@
+c:\users\barrace\documents\visual studio 2015\Projects\Global Domination\Global Domination\bin\Debug\Global Domination.exe.config
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\Global Domination.csprojResolveAssemblyReference.cache
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\AccountSettings.g.cs
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\LogIn.g.cs
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\MainWindow.g.cs
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\MainWindowLoggedIn.g.cs
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\OnlinePlay.g.cs
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\PassNPlay.g.cs
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\PlayWindow.g.cs
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\PlayWithFriend.g.cs
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\SignUp.g.cs
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\App.g.cs
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\Global Domination_MarkupCompile.cache
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\Global Domination_MarkupCompile.lref
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\bin\Debug\Global Domination.exe
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\bin\Debug\Global Domination.pdb
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\AccountSettings.baml
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\LogIn.baml
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\MainWindow.baml
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\MainWindowLoggedIn.baml
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\OnlinePlay.baml
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\PassNPlay.baml
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\PlayWindow.baml
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\PlayWithFriend.baml
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\SignUp.baml
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\Global Domination.g.resources
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\Global_Domination.Properties.Resources.resources
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\Global Domination.csproj.GenerateResource.Cache
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\Global Domination.exe
+C:\Users\Barrace\Documents\Visual Studio 2015\Projects\Global Domination\Global Domination\obj\Debug\Global Domination.pdb
+C:\Users\Barrace\Documents\GitHub\GlobalDomination\Global Domination\bin\Debug\Global Domination.exe.config
+C:\Users\Barrace\Documents\GitHub\GlobalDomination\Global Domination\obj\Debug\Global Domination.exe
+C:\Users\Barrace\Documents\GitHub\GlobalDomination\Global Domination\obj\Debug\Global Domination.pdb
