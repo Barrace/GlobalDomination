@@ -26,12 +26,40 @@ namespace Global_Domination
             emailBlock.Foreground = new SolidColorBrush(Colors.DarkCyan);
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void resumeButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void resumeButton_Click(object sender, RoutedEventArgs e)
+        private void cancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindowLoggedIn main = new MainWindowLoggedIn();
+            main.Show();
+            this.Close();
+        }
+
+        private void playLocalButton_Click(object sender, RoutedEventArgs e)
+        {
+            PassNPlay win = new PassNPlay();
+            win.Show();
+            this.Close();
+        }
+
+        private void emailBlock_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            AccountSettings accountWindow = new AccountSettings();
+            accountWindow.Show();
+            this.Close();
+        }
+
+        private void playWithFriend_Click(object sender, RoutedEventArgs e)
+        {
+            PlayWithFriend friendWin = new PlayWithFriend();
+            friendWin.Show();
+            this.Close();
+        }
+
+        private void playOnlineButton_Click(object sender, RoutedEventArgs e)
         {
 
         }

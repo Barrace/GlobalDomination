@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace Global_Domination
     /// </summary>
     public partial class SignUp : Window
     {
+        
         public SignUp()
         {
             InitializeComponent();
@@ -26,10 +28,16 @@ namespace Global_Domination
 
         private void emailTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if(!emailTextbox.Text.Contains("@") || emailTextbox.Text.Substring(emailTextbox.Text.Length - 5, 4)[0] != '.')
+            if(!emailTextbox.Text.Contains("@") || 
+                emailTextbox.Text.Substring(emailTextbox.Text.Length - 4, 4)[0] != '.' )//||
+                //if email is taken)
             {
                 errorBlock.Foreground = new SolidColorBrush(Colors.Red);
                 errorBlock.Text = "Invalid Email";
+            }
+            else
+            {
+                errorBlock.Text = "";
             }
         }
         
@@ -39,6 +47,10 @@ namespace Global_Domination
             {
                 errorBlock.Foreground = new SolidColorBrush(Colors.Red);
                 errorBlock.Text = "Emails do not match";
+            }
+            else
+            {
+                errorBlock.Text = "";
             }
         }
 
@@ -56,10 +68,32 @@ namespace Global_Domination
                 passwordBox.Password.Any(char.IsDigit) &&
                 passwordBox.Password.Length >= 6 &&
                 emailTextbox.Text.Contains("@") &&
-                emailTextbox.Text.Substring(emailTextbox.Text.Length - 5, 4)[0] == '.')
+                emailTextbox.Text.Substring(emailTextbox.Text.Length - 4, 4)[0] == '.')
             {
                 //put data into DB
-                
+                try
+                {
+                    SqlConnection conn = new SqlConnection();
+                    conn.ConnectionString = "Server=DESKTOP-GRD8P4F;Database=GLOBALDOMINATION;Trusted_Connection=true;";
+                    conn.Open();
+                    string insert = "INSERT INTO Accounts VALUES (" +
+                                 (char)34 +
+                                 emailTextbox.Text + 
+                                 (char)34 + 
+                                 ", " +
+                                 (char)34 +
+                                 passwordBox.Password +
+                                 (char)34 +
+                                 ", null, null, null, 0, 0, " +
+                                 DateTime.Today + ");";
+                    SqlCommand cmd = conn.CreateCommand();
+                    cmd.CommandText = insert;
+                }
+                catch
+                {
+                    MessageBox.Show("DB error");
+                }
+
                 App.Current.Properties["email"] = emailTextbox.Text;
                 MainWindowLoggedIn main = new MainWindowLoggedIn();
                 main.Show();
@@ -78,11 +112,14 @@ namespace Global_Domination
                 errorBlock.Foreground = new SolidColorBrush(Colors.Red);
                 errorBlock.Text = "Password must contain a number";
             }
-
-            if (passwordBox.Password.Length < 6)
+            else if (passwordBox.Password.Length < 6)
             {
                 errorBlock.Foreground = new SolidColorBrush(Colors.Red);
                 errorBlock.Text = "Password must be at least 6 characters";
+            }
+            else
+            {
+                errorBlock.Text = "";
             }
         }
 
@@ -92,6 +129,10 @@ namespace Global_Domination
             {
                 errorBlock.Foreground = new SolidColorBrush(Colors.Red);
                 errorBlock.Text = "Passwords do not match";
+            }
+            else
+            {
+                errorBlock.Text = "";
             }
         }
     }

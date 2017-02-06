@@ -38,5 +38,17 @@ namespace Global_Domination
             accountWindow.Show();
             this.Close();
         }
+
+        private void playButton_Click(object sender, RoutedEventArgs e)
+        {
+            PlayWindow win = new PlayWindow();
+            win.Show();
+            this.Close();
+        }
+
+        private void storeButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Global_Domination"
         mc:Ignorable="d"
-        Title="GameWindowPassNPlay" Height="589.796" Width="964.286">
+        Title="GameWindowPassNPlay" Height="651.02" Width="1001.021">
     <Grid>
 
     </Grid>

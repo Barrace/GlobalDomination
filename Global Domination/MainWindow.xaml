@@ -9,5 +9,6 @@
     <Grid>
         <Button x:Name="logIn" Content="Log In" HorizontalAlignment="Left" Margin="144,95,0,0" VerticalAlignment="Top" Width="76" Click="logIn_Click"/>
         <Button x:Name="signUp" Content="Sign Up" HorizontalAlignment="Left" Margin="144,159,0,0" VerticalAlignment="Top" Width="76" Click="signUp_Click"/>
+        <Button x:Name="testConn" Content="Test Connection" HorizontalAlignment="Left" Margin="132,242,0,0" VerticalAlignment="Top" Width="98" Click="testConn_Click"/>
     </Grid>
 </Window>

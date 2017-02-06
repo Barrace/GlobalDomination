@@ -33,14 +33,23 @@ namespace Global_Domination
 
         private void logIn_Click(object sender, RoutedEventArgs e)
         {
-            //if combination isnt in db, 
-            errorTextblock.Text = "Invalid combination. Please try again.";
-            //else..
-            App.Current.Properties["email"] = emailTextBox.Text;
-            MainWindowLoggedIn main = new MainWindowLoggedIn();
-            main.Show();
-            this.Close();
+            string query = "SELECT pass FROM Accounts WHERE email = " + emailTextBox.Text;
+            //if ()
+            //{
+                errorTextblock.Text = "Invalid combination. Please try again.";
+            //}
+            //else
+            //{
+                App.Current.Properties["email"] = emailTextBox.Text;
+                MainWindowLoggedIn main = new MainWindowLoggedIn();
+                main.Show();
+                this.Close();
+            //}
         }
-        
+
+        private void emailTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

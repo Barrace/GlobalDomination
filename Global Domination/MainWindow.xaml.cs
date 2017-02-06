@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,16 +24,8 @@ namespace Global_Domination
         public MainWindow()
         {
             InitializeComponent();
-        }
 
-        private void button_Copy_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"C:\Users\Barrace\Documents\GitHub\GlobalDomination\Global Domination\_backgroundWorldMap.jpg")));
         }
 
         private void logIn_Click(object sender, RoutedEventArgs e)
@@ -42,16 +35,34 @@ namespace Global_Domination
             this.Hide();
         }
 
-        private void button_Copy_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void signUp_Click(object sender, RoutedEventArgs e)
         {
             SignUp signUp = new SignUp();
             signUp.Show();
             this.Hide();
+        }
+
+        private void testConn_Click(object sender, RoutedEventArgs e)
+        {
+            string connString = "Server=GLOBALDOMINATION;" +
+                                "Database=GlobalDomination;" +
+                                "User Id=Barrace;" +
+                                "Password=nokyal45;";
+
+            string connDataSourceString = "Data Source=GLOBALDOMINATION;" +
+                                          "User Instance=true;" +
+                                          "User Id=Barrace;" +
+                                          "Password=nokyal45;";
+            try
+            {
+                SqlConnection conn = new SqlConnection();
+                conn.ConnectionString = connString; //connDataSourceString
+                conn.Open();
+            }
+            catch
+            {
+                MessageBox.Show("failure :(");
+            }
         }
     }
 }
